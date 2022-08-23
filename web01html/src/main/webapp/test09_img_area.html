@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 250px;
+            height: 250px;
+        }
+        h1{
+            text-align: center;
+        }
+        p, li{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>동 물</h1>
+    <!-- img, a를 이용한 방법 -->
+    <a href="https://www.bing.com/images/search?q=%ED%8C%90%EB%8B%A4&qs=n&form=QBIRMH&sp=-1&pq=%ED%8C%90%EB%8B%A4&sc=10-2&cvid=DE53148ADA7B4B89951E3C0113FB9167&ghsh=0&ghacc=0&first=1&tsc=ImageHoverTitle" target="_blank">
+        <img src="./팬더.jpg" alt="무료이미지" title="panda">
+    </a>
+    <a href="https://www.bing.com/images/search?q=%EC%BF%BC%EC%B9%B4&qs=n&form=QBIRMH&sp=-1&pq=%EC%BF%BC%EC%B9%B4&sc=10-2&cvid=242052003F55479FA42314ED7ED9098A&ghsh=0&ghacc=0&first=1&tsc=ImageHoverTitle" target="_blank">
+        <img src="./쿼카.jpg" alt="무료이미지" title="quokka">
+    </a>
+    <!-- img, map을 이용한 방법 -->
+    <img src="펭귄.png" usemap="#mysite" alt="펭귄" title="펭귄">
+    <map name="mysite">
+        <area shape="rect" coords="40,20,100,150" alt="펭귄" title="penguin" target="_blank" href="https://www.bing.com/images/search?q=%ed%8e%ad%ea%b7%84&form=HDRSC2&first=1&tsc=ImageHoverTitle">
+    </map>
+
+    <!-- del(삭제), ins(밑줄) -->
+    <p>My favorite color is <del style="color: red;">red</del> <ins style="color: green;">green</ins> !</p>
+    <li><del>blue</del></li>
+    <li><del>red</del></li>
+    <li><ins>green</ins></li>
+    
+    <!-- picture -->
+    <picture>
+        <source media="(min-width : 700px)" srcset="담비.jpg">
+        <source media="(min-width : 400px)" srcset="담비.jpg">
+        <a href="https://www.bing.com/images/search?q=%eb%8b%b4%eb%b9%84&form=QBIR&first=1&tsc=ImageHoverTitle">
+            <img src="담비.jpg" alt="담비" title="담비">
+        </a>
+    </picture>
+</body>
+</html>

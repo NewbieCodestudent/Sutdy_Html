@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <script>
+        var a = 10;
+        console.log(a);
+        window.onload = function(){  // body가 실행되고 나서 실행
+            // var btn_idcheck = document.getElementById("btn_idcheck");
+            var btn_idcheck = document.querySelector("#btn_idcheck");
+            // 위의 함수와 같은 의미, ()안에 #을 붙이는 여부의 차이가 있다.
+            console.log(btn_idcheck);
+            btn_idcheck.onclick = function(event) {
+                console.log("onclick...");
+                event.preventDefault(); // 이벤트 이동을 막는 소스
+                event.stopPropagation();
+            };
+        };
+    </script>
+        <!-- 자바스크립트는 head와 body 둘다 올 수 있다. -->
+</head>
+<body>
+    <script>
+        var a = 100;
+        console.log(a);
+    </script>
+    <h1>로그인</h1>
+    <form action="loginOK.do" method="post">
+        <label for="id">ID:</label><input type="text" placeholder="ID" id="login_id" name="id" value="admin"><br>
+	    <!-- 자바스크립트와 연동해서 중복체크 버튼이 중복체크관련 기능만 하도록 할 수 있다. -->
+        <label for="pw">PW:</label><input type="password" placeholder="PW" id="login_pw" name="pw" value="hi1234"><br>
+        <input type="submit" value="로그인">
+	    <!-- value 값을 넣어서 더미값이 입력되게 한다. -->
+	    <!-- password로 타입을 하면 글자가 안보인다. -->
+	    <!-- placeholder="ID" 를 입력하면 빈칸에 글씨가 보이는 효과 -->
+    </form>
+    <script>
+        var a = 1000;
+        console.log(a);
+    </script>
+    <h1>회원가입</h1>
+    <form action="insertOK.do" method="post">
+        <label for="id">ID:</label><input type="text" placeholder="ID" id="id" name="id" value="admin">
+        <button id="btn_idcheck">중복체크</button><br>
+        <!-- button만 사용시 페이지가 넘어가기 때문에 자바스크립트 코드를 사용해서 막아야 한다. !8번줄 참조! -->
+        <label for="pw">PW:</label><input type="password" placeholder="PW" id="pw" name="pw" value="hi1234"><br>
+        <label for="name">NAME:</label><input type="text" placeholder="NAME" id="name" name="name" value="kim"><br>
+        <label for="tel">TEL:</label><input type="text" placeholder="TEL" id="tel" name="tel" value="02"><br>
+        <input type="submit"  value="회원가입">
+    </form>
+    <h1>추가정보</h1>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <!-- filr을 전송하기 위해서는 form의 method가 post형식에 enctupe이 multipart/form-data 형식이어여 한다. -->
+        <label for="mf">M:</label><input type="radio" class="mf" name="mf" value="m" checked>
+        <label for="mf">F:</label><input type="radio" class="mf" name="mf" value="f"><br>
+	    <!-- radio 선택하는 지문 / checked 화면이 출력시 선택되어진 상태로 출력 -->
+        <!-- value 값은 추가를 제출시 주소값에 반영되어 제출된다. -->
+        <label for="hobby1">="file1">프야구:</label><input type="checkbox" id="hobby1" name="hobby1" value="baseball"><br>
+        <label for="hobby2">농구:</label><input type="checkbox" id="hobby2" name="hobby2" value="baskatball"><br>
+        <label for="pct">습득율:</label><input type="range" id="pct" name="pct" value="30"><br>
+        <label for="birthday">생일:</label><input type="date" id="birthday" name="birthday" value="2022-08-17"><br>
+        <label for="num">NUM:1</label><input type="hidden" id="num" name="num" value="1"><br>
+        <label for로필이미지:</label><input type="file" id="file1" name="file1"><br>
+        <input type="submit"  value="추가">
+        <!-- checkbox는 선택, 해테가 가능한 box를 생성한다. -->
+        <!-- pct는 비율바가 생긴다. -->
+        <!-- hidden : 전송은 해야 되는데 수정하면 안되는 경우 사용  ex) 회원정보수정할 경우 ID는 수정할 수 없다. -->
+    </form>
+
+<!-- form이 실행되고 실행 -->
+ <script>
+        var a = 10000;
+        console.log(a);
+        // var btn_idcheck = document.getElementById("btn_idcheck");
+        // console.log(btn_idcheck);
+</script>
+
+</body>
+</html>

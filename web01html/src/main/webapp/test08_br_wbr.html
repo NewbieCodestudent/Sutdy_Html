@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>br_wbr</title>
+    <style>
+        p{
+            width: 200px;
+            border: 1px solid red;
+        }
+        details {
+        width: 200px;
+        border: 1px solid #aaa;
+        border-radius: 5px;
+        padding: .5em .5em 0;
+        }
+    
+        summary {
+        font-weight: bold;
+        margin: -.5em -.5em 0;
+        padding: .5em;
+        }
+    </style>
+</head>
+<body>
+    <p>HelloHTml5<br>HelloHTml5</p>
+    <p>HelloHTml5<wbr>HelloHTml5<wbr>HelloHTml5<wbr>안녕하세요<wbr>안녕하세요<wbr>안녕하세요<wbr></p>
+    <!-- wbr : 구간내 자동 줄 바꿈 -->
+    <p>HelloHTml5HelloHTml5HelloHTml5안녕하세요안녕하세요안녕하세요</p>
+    <details>
+        <summary>인사말</summary>
+        HelloHTml5<wbr>HelloHTml5<wbr>HelloHTml5<wbr>안녕하세요<wbr>안녕하세요<wbr>안녕하세요<wbr>
+    </details>
+
+</body>
+</html>

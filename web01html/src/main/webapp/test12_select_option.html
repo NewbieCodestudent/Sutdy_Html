@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select name="" id="">
+        <option value="">KT</option>
+        <option value="">LGU+</option>
+        <option value="">SKT</option>
+    </select>
+    <hr>
+    
+    <form action="#" method="get">
+        <select name="searchKey" id="searchKey">
+            <option value="name">name</option>
+            <option value="tel">tel</option>
+        </select>
+        <input type="text" name="searchWord" id="searchWord" value="ki">
+        <input type="submit" value="submit">
+    </form>
+    <hr>
+
+    <form action="#" method="get">
+        <select name="searchKey" id="searchKey">
+            <option value="title">title</option>
+            <option value="content">content</option>
+        </select>
+        <input type="text" name="searchWord" id="searchWord" value="java">
+        <input type="submit" value="submit">
+    </form>
+
+    <form action="#" method="get">
+        <select name="searchKey" id="searchKey">
+            <option value="title">title</option>
+            <option value="content">content</option>
+        </select>
+        <input type="text" name="title" id="title" value="java">
+        <textarea name="content" id="" cols="30" rows="10"></textarea>
+        <input type="submit" value="submit">
+    </form>
+    <hr>
+
+    <form action="#" method="get">
+        학과 : <input type="text" name="st_department" list="depList"><br>
+        이름 : <input type="text" name="st_name"><br><br>
+        <datalist id="depList">
+            <option value="컴퓨터공학과"></option>
+            <option value="영어영문과"></option>
+            <option value="경영학과"></option>
+            <option value="사회체육과"></option>
+        </datalist>
+        <button type="submit">제출하기</button>
+    </form>
+</body>
+</html>

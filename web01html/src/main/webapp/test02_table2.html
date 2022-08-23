@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>학생목록</title>
+    <link rel="stylesheet" href="test02.css">
+    <!-- link css : css에 저장되어 있는 stylesheet를 가져와서 적용하는 방법 -->
+    <!-- 여러 페이지에 공통되는 부분을 적용시킬때 사용하는 방법 -->
+</head>
+
+<body>
+    <h1>학생목록</h1>
+    <!-- 표를 만드는 태그 -->
+    <table>
+        <thead>
+            <tr>
+                <th>num</th> <!-- 표의 제목을 작성-->
+                <th>name</th>
+                <th>kor</th>
+                <th>eng</th>
+                <th>math</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- tr : 행 -->
+                <td>1</td> <!-- td : 열 -->
+                <td>lee</td>
+                <td>99</td>
+                <td>88</td>
+                <td>77</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>kim</td>
+                <td>77</td>
+                <td>88</td>
+                <td>99</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>park</td>
+                <td>70</td>
+                <td>80</td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>yang</td>
+                <td>50</td>
+                <td>100</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>choi</td>
+                <td>90</td>
+                <td>80</td>
+                <td>90</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5", style="color: white;">1 2 3 4 5</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>

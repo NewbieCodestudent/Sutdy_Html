@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원목록</title>
+    <!-- 웹의 탭에 제목(사이트 제목을 표현) -->
+    <link rel="stylesheet" href="test02.css">
+    <!-- link css : css에 저장되어 있는 stylesheet를 가져와서 적용하는 방법 -->
+    <!-- 여러 페이지에 공통되는 부분을 적용시킬때 사용하는 방법 -->
+</head>
+<body>
+    <h1>회원목록</h1>
+    <!-- 표를 만드는 태그 -->
+    <table>
+        <thead> <!-- table의 제목 -->
+            <colgroup>
+                <col><col><col><col><col>
+            </colgroup>
+            <tr>
+                <th>num</th>   <!-- 표의 제목을 작성-->
+                <th>id</th>
+                <th>pw</th>
+                <th>name</th>
+                <th>tel</th>
+            </tr>
+        </thead>
+        <tbody> <!-- table의 바디 -->
+            <tr>   <!-- tr : 행 --> 
+                <td>1</td>   <!-- td : 열 --> 
+                <td>admin01</td>
+                <td>hi1111</td>
+                <td>kim01</td>
+                <td>010</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>admin02</td>
+                <td>hi2222</td>
+                <td>kim02</td>
+                <td>020</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>admin03</td>
+                <td>hi3333</td>
+                <td>kim03</td>
+                <td>030</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>admin04</td>
+                <td>hi4444</td>
+                <td>kim04</td>
+                <td>040</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>admin05</td>
+                <td>hi5555</td>
+                <td>kim05</td>
+                <td>050</td>
+            </tr>
+        </tbody>
+        <tfoot> <!-- table의 꼬리말 -->
+            <tr>
+                <td colspan="5", style="color: white;">1 2 3 4 5</td>
+            </tr>
+        </tfoot>
+        
+        
+    </table>
+</body>
+</html>

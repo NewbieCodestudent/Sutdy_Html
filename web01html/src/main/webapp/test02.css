@@ -1,0 +1,36 @@
+body {
+    background-color: rgba(79, 99, 209, 0.349);
+    margin: 0%;   /* 여백 */
+}
+table tfoot tr td {
+    background-color: rgba(79, 99, 209, 0.349);
+}
+h1 {
+    text-align: center;
+}
+table {
+    margin: auto;
+}
+table tr td {
+    text-align: center;
+    /* background-color: rgb(128, 198, 144); */
+}
+tr:nth-child(odd) {
+    /* 짝수행에 색 */
+    background: rgb(15, 140, 189);
+}
+tr:nth-child(even) {
+    /* 홀수행에 색 */
+    background: rgb(95, 233, 238);
+}
+th {
+    width: 80px;
+    color: aliceblue;
+    text-align: center;
+    background-color: rgb(72, 209, 85);
+}
+h1 {
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+}
